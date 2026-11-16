@@ -1,0 +1,27 @@
+:root{--bg:#eef2f6;--card:#fff;--ink:#0f1b2d;--mute:#64748b;--line:#e2e8f0;--acc:#0f9d7a;--bad:#e5484d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1040px;margin:0 auto;padding:32px 16px 64px}
+.top h1{font-size:2.4rem;margin:0;letter-spacing:-.03em}.top p{margin:4px 0 24px;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.grid{display:grid;grid-template-columns:320px 1fr;gap:16px;margin-top:16px;align-items:start}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.big{font-size:2.6rem;font-weight:700;letter-spacing:-.03em}
+.track{height:10px;background:var(--line);border-radius:99px;overflow:hidden;margin:10px 0}.track.sm{height:6px;margin:0}
+.fill{height:100%;background:var(--acc);border-radius:99px;transition:width .3s}.fill.hot{background:var(--bad)}
+.ok{color:var(--mute)}.err{color:var(--bad);font-size:.9rem}
+.bud{width:90px;padding:2px 6px;border:1px solid var(--line);border-radius:6px;font:inherit}
+.crow{display:grid;grid-template-columns:110px 1fr 80px;gap:10px;align-items:center;margin-bottom:10px;font-size:.9rem}.crow b{text-align:right}
+.form{display:flex;flex-direction:column;gap:12px}.form h2{margin:0}
+label{display:flex;flex-direction:column;gap:4px;font-size:.85rem;color:var(--mute)}
+input,select{padding:10px;border:1px solid var(--line);border-radius:10px;font:inherit;color:var(--ink);background:#fff}
+input:focus,select:focus,button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}
+.btn{background:var(--acc);color:#fff;border:0;border-radius:10px;padding:11px;font:inherit;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--mute);border:1px solid var(--line)}
+.bar{display:flex;gap:10px;margin-bottom:12px}.bar input{flex:1}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ico{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:1.2rem}
+.meta{flex:1;display:flex;flex-direction:column}.meta small{color:var(--mute)}
+.link{background:none;border:0;color:var(--mute);cursor:pointer;font:inherit;font-size:.85rem}.link:hover{color:var(--acc)}.del:hover{color:var(--bad)}
+.empty{color:var(--mute);padding:16px 0}.foot{color:var(--mute);font-size:.85rem;margin:12px 0 0}
+@media(max-width:800px){.grid,.sum{grid-template-columns:1fr}}
